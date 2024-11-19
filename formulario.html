@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<title>Formulario de inscripción</title>
+</head>
+<body>
+<form action="/submit" method="post">
+    <h1><strong>FORMULARIO DE INSCRIPCIÓN</strong></h1>
+    <p>Gracias por tu interés en <strong>NODO</strong>, a continuación encontrará un formulario de inscripción. Diligencie todos los datos para ponernos en contacto con usted.</p>
+<h2>DATOS PERSONALES</h2>
+<label for="nombre">Nombre</label>
+<input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+<br>
+<br>
+<label for="apellidos">Apellidos</label>
+<input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+<br>
+<br>
+<label for="e-mail">Correo electrónico</label>
+<input type="email" id="e-mail" name="e-mail" placeholder="email" required>
+<br>
+<br>
+<label for="direccion">Dirección</label>
+<input type="text" id="direccion" name="direccion" placeholder="Dirección">
+<br>
+<br>
+<label for="departamento">Seleccione el departamento</label>
+<select name="departamento" id="departamento" required>
+    <option value="">Seleccione un departamento</option>
+    <option value="amazonas">AMAZONAS</option>
+    <option value="antioquia">ANTIOQUIA</option>
+    <option value="arauca">ARAUCA</option>
+    <option value="atlantico">ATLANTICO</option>
+    <option value="boliVar">BOLÍVAR</option>
+    <option value="boyaca">BOYACÁ</option>
+    <option value="caldas">CALDAS</option>
+    <option value="caqueta">CAQUETÁ</option>
+    <option value="casanare">CASANARE</option>
+    <option value="cauca">CAUCA</option>
+    <option value="cesar">CESAR</option>
+    <option value="choco">CHOCÓ</option>
+    <option value="cordoba">CÓRDOBA</option>
+    <option value="cundinamarca">CUNDINAMARCA</option>
+    <option value="distrito-capital">DISTRITO CAPITAL</option>
+    <option value="guainia">GUAINÍA</option>
+    <option value="guaviare">GUAVIARE</option>
+    <option value="huila">HUILA</option>
+    <option value="la guajira">LA GUAJIRA</option>
+    <option value="magdalena">MAGDALENA</option>
+    <option value="meta">META</option>
+    <option value="nariño">NARIÑO</option>
+    <option value="norte-de-santander">NORTE DE SANTANDER</option>
+    <option value="putumayo">PUTUMAYO</option>
+    <option value="quindio">QUINDÍO</option>
+    <option value="risaralda">RISARALDA</option>
+    <option value="san-andres-y-providencia">SAN ANDRÉS Y PROVIDENCIA</option>
+    <option value="santander">SANTANDER</option>
+    <option value="sucre">SUCRE</option>
+    <option value="tolima">TOLIMA</option>
+    <option value="valle">VALLE</option>
+    <option value="vaupes">VAUPÉS</option>
+    <option value="vichada">VICHADA</option>
+    </select>
+<br>  
+<br>  
+    <label for="pais">Seleccione un país</label> 
+    <select name="pais" id="pais" required>
+    <option value="">Selecciones un país</option>
+    <option value="argentina">ARGENTINA</option>
+    <option value="Bolivia">BOLIVIA</option>
+    <option value="brasil">BRASIL</option>
+    <option value="chile">CHILE</option>
+    <option value="colombia">COLOMBIA</option>
+    <option value="costa rica">COSTA RICA</option>
+    <option value="cuba">CUBA</option>
+    <option value="ecuador">ECUADOR</option>
+    <option value="el salvador">EL SALVADOR</option>
+    <option value="guayana-francesa">GUAYANA FRANCESA</option>
+    <option value="granada">GRANADA</option>
+    <option value="guatemala">GUATEMALA</option>
+    <option value="guayana">GUAYANA</option>
+    <option value="haiti">HAITÍ</option>
+    <option value="honduras">HONDURAS</option>
+    <option value="jamaica">JAMAICA</option>
+    <option value="mexico">MÉXICO</option>
+    <option value="nicaragua">NICARAGUA</option>
+    <option value="paraguay">PARAGUAY</option>
+    <option value="panama">PANAMÁ</option>
+    <option value="peru">PERÚ</option>
+    <option value="puerto-rico">PUERTO RICO</option>
+    <option value="republica-dominicana">REPÚBLICA DOMINICANA</option>
+    <option value="surinam">SURINAM</option>
+    <option value="uruguay">URUGUAY</option>
+    <option value="venezuela">VENEZUELA</option>
+    </select>
+<br>
+<br>
+<label for="telefono">Número de teléfono</label>
+<input type="text" id="telefono" name="telefono" pattern="\d{10}" maxlength="10" required title="Debe ingresar exactamente 10 números" placeholder="Teléfono">
+<br>
+<br>
+<label for="descripcion">Realice una descripción personal (Max 300 caracteres)</label>
+<br>
+<textarea cols="50" rows="10" id="descripcion" name="descripcion" placeholder="Ingrese una descripción breve..." maxlength="300" required></textarea>
+<br>
+<br>
+<h2><strong>CARRERA DE INTERÉS</strong></h2>
+<label for="carrera">¿A qué carrera deseas inscribirte?</label>
+<select name="carrera" id="carrera" required>
+    <option value="">¿A qué carrera deseas inscribirte?</option>
+    <option value="jobs-to-be-done">JOBS TO BE DONE</option>
+    <option value="cloud-native">CLOUD NATIVE</option>
+    <option value="frontend">FRONTEND</option>
+    <option value="backend">BACKEND</option>
+    <option value="fundamentals">FUNDAMENTALS</option>
+    <option value="python">PHYTON</option>
+    <option value="marketing-digital">MARKETING DIGITAL</option>
+    <option value="mas-carreras">PUEDEN OBTENER MÁS EN LA PÁGINA DE NODO</option>
+        </select>
+    <br>
+    <br>
+<label for="modalidad">Modalidad</label>
+<select name="modalidad" id="modalidad" required>
+    <option value="">Modalidad</option>
+    <option value="presencial">PRESENCIAL</option>
+    <option value="virtual">VIRTUAL</option>
+</select>
+<br>
+<br>
+<label for="esta-trabajando-si" required>¿Está trabajando actualmente?</label>
+<br>
+<input type="radio" id="esta-trabajando-si" name="esta-trabajando" value="si">SI
+<label for="esta-trabajando-no"></label>
+<input type="radio" id="esta-trabajando-no" name="esta-trabajando" value="no">NO
+
+
+<br>
+<br>
+<button type="submit">ENVIAR</button>
+<button type="reset">RESETEAR EL FORMULARIO</button>
+
+
+</form>
+
+</body>
+</html>

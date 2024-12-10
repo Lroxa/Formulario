@@ -2,14 +2,16 @@
     box-sizing: border-box; /*Hace que los elementos no crezcan más allá del tamaño que le indico*/
 }
 
-html{
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Cambia de 100vw */
+    overflow-x: hidden; /* Puedes mantenerlo aquí si el problema persiste */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    margin: 0;
     scroll-behavior: smooth;
 }
 
-body{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-    margin: 0;
-}
 
 h1{ font-size: 4em;}
 h2{ font-size: 3em;}
@@ -17,7 +19,7 @@ h3{ font-size: 2em;}
 p{ font-size: 1.5em}
 li{ font-size: 1.5em;}
 
-button{
+.info-btn{
     font-size: 1.3em;
     font-weight: bold; /*negrita*/
     padding: 1% 5%;
@@ -33,8 +35,9 @@ button:hover{ /*cambia el color del botón al pasar por encima*/
 }
 
 .container{
-    max-width: 1100px;
-    margin: auto;
+    margin: 0 auto;
+    max-width: 100%;
+
 }
 
 header{
@@ -72,16 +75,30 @@ header a{
 }
 
 header a:hover{
-    color: #de8d8a;
+    color: #d6c4c3;
 }
 
 #who-im{
-
+    background-color: rgba(236, 217, 217, 0.301);
 }
 
 #who-im .container{
     text-align: center;
-    padding: 200px 12px;
+    padding: 50px 12px;
+    display: flex;
+    flex-wrap: wrap; /*Permite que los elementos se ajusten si no caben*/
+    justify-content: center; 
+    padding: 50px 12px;
+    gap: 20px; /*Espaciado entre elementos*/ 
+}
+#who-im h2 {
+    color: #a74d4a;
+    font-weight: bold;
+}
+
+#who-im p{
+    color: #a74d4a;
+    font-style: oblique;
 }
 
 #about-me {
@@ -96,17 +113,55 @@ header a:hover{
 
 #about-me h2{
     margin-top: 0;
-    font-size: 3.5em;
+    font-size: 3.5m;
 }
 
 #about-me p{
-    display: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fab3b1;
+    padding: 10%;
+    margin: 15px;
+    border-radius: 15px;
+    border: 2px solid;
+    box-shadow: 2px 2px 10px #a74d4a;
 }
 
-#letter{
-    background-position: center center;
-    background-size: cover;
-    background-color: #fd837f;
+#information p strong {
+    font-size: 1.5em; 
+    font-weight: bold;
+    display: flex; 
+    margin-bottom: 30%;     
+}
+
+#laboral-experience p strong {
+    font-size: 1.5em; 
+    font-weight: bold;
+    display: flex; 
+    margin-bottom: 30%; 
+}
+
+#education p strong {
+    font-size: 1.5em; 
+    font-weight: bold;
+    display: flex; 
+    margin-bottom: 30%; 
+}
+
+#abilities p strong {
+    font-size: 1.5em; 
+    font-weight: bold;
+    display: flex; 
+    margin-bottom: 30%; 
+}
+
+.letter{
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fab3b1;
     padding: 50px;
     margin: 15px;
     border-radius: 15px;
@@ -117,10 +172,156 @@ header a:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: rgba(0,0,0,0,5);
+    background-color: rgba(236, 217, 217, 0.301);
     flex-direction: column;
     height: 90vh;
 }
+
+#follow-me h2{
+    font-size: 8vh;
+    color: #a74d4a;
+    font-weight: bold;
+}
+
+#follow-me button{
+    font-size: 3vh;
+    font-weight: bold; /*negrita*/
+    padding: 8% 5%;
+    border-radius: 10px;
+    border-color: #de8d8a;
+    box-shadow: 2px 2px 10px color #de8d8a;
+    color: #fd837f;
+    background-color: #ffe3e5 ;
+}
+
+#follow-me button:hover{ /*cambia el color del botón al pasar por encima*/
+    background-color: #f0acafa4 ;
+}
+
+footer p{
+    margin: 0;
+    color: #a74d4a;
+}
+
+footer .container{
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Media Query para escritorio*/
+@media (width >720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    #who-im .container{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    #who-im .presentation{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        word-wrap: break-word; /*Permite que las palabras largas se ajusten*/
+        white-space: normal; /*Evita que el texto se salga*/
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #who-im h2{
+        margin: 0;
+    }
+
+    #who-im .my-photo{
+        background-image: url("media/myphoto.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #about-me .cartas{
+       display: flex; 
+       justify-content: center;      
+    }
+
+    #information .p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .info-btn{
+        display: none; 
+    }
+}
+
+@media (width <480px) {
+    /*Ocultar todas las secciones excepto #who-im y #information*/
+    header,
+    #laboral-experience,
+    #education,
+    #abilities,
+    #follow-me,
+    footer {
+        display: none;
+    }
+
+    /* Mostrar solo la foto y la information */
+    #who-im h2 {
+        display: block;
+    }
+
+    #who-im p{
+        display: none ;
+    }
+
+    #who-im .container {
+        padding: 20px;
+    }
+
+    #about-me h2{
+    display: none;
+}
+
+    #information p {
+        display: block;
+        text-align: center;
+        height: 100%;
+        font-size: 150%;
+    }
+
+    #who-im .my-photo {
+        background-image: url("media/myphoto.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+        width: 300px;
+        margin: auto;
+    }
+
+    .info-btn{
+        display: none; 
+    }
+}
+
+
+
 
 
 

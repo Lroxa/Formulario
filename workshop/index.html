@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarjeta de presentación</title>
+    <title>Currículum Vitae</title>
     <link rel="stylesheet" href="index.css"/>
 </head>
 <body>
@@ -11,84 +11,94 @@
         <div class="container">
             <p class="logo">Laura Roxana Amaya</p>
             <nav>
-                <a href="#information">Información personal</a>
-                <a href="#laboral-experience">Experiencia laboral</a>
-                <a href="#education">Educación</a>
-                <a href="#habilities">Habilidades</a>
+                <a href="#information" aria-label="Ir a información personal">Información personal</a>
+                <a href="#laboral-experience" aria-label="Ir a experiencia laboral">Experiencia laboral</a>
+                <a href="#education" aria-label="Ir a educación">Educación</a>
+                <a href="#abilities" aria-label="Ir a habilidades">Habilidades</a>
             </nav>
         </div>
     </header>
+
     <section id="who-im">
         <div class="container">      
             <div class="my-photo"></div>
-            <h2>Soy Laura Roxana</h2>
-            <p>Instrumentadora quirúrgica con cuatro años de experiencia en cirugía veterinaria y una fuerte pasión por la docencia lo que se ha reflejado en mi desempeño como docente en el ámbito de la salud. Actualmente me estoy formando como desarrolladora web buscando combinar mis conocimientos en salud con habilidades tecnológicas para impulsar innovaciones en el sector, de manera que se pueda optimizar procesos y el uso de herramientas digitales que beneficien a profesionales y pacientes. </p>
+            <div class="presentation">
+                <h2>Soy Laura Roxana</h2>
+                <p>Instrumentadora quirúrgica con cuatro años de experiencia en cirugía veterinaria y una fuerte pasión por la docencia lo que se ha reflejado en mi desempeño como docente en el ámbito de la salud. Actualmente me estoy formando como desarrolladora web buscando combinar mis conocimientos en salud con habilidades tecnológicas para impulsar innovaciones en el sector, de manera que se pueda optimizar procesos y el uso de herramientas digitales que beneficien a profesionales y pacientes. </p>
+            </div>
         </div>
     </section>
 
     <section id="about-me">
         <div class="container">
             <h2>Acerca de mi</h2>
-            <div id="letter">
-                <div id="information">
-                            <h3>Información personal</h3>
+            <div class="wallpaper">
+                <div class="cartas">
+                    <section id="information">
+                                <p>
+                                    <strong>Información personal</strong>
+                                    Laura Roxana Amaya Molina
+                                    <br>Correo electrónico: xxxxxxx.xxxxxx@gmail.com
+                                    <br>Teléfono: xxxxxxxxxx
+                                    <br>LinkedIn
+                                </p>   
+                                <button class="info-btn">+info</button>
+                    </section>
+                        <section id="laboral-experience">
+                            
                             <p>
-                                Laura Roxana Amaya Molina
-                                <br>Correo electrónico: lroxana.amaya@gmail.co
-                                <br>Teléfono: 314728754
-                                <br>LinkedIn
-                            </p>    
-                            <button>+info</button>
-                </div>
-                    <div id="laboral-experience">
-                        <h3>Experiencia laboral</h3>
-                        <p>
-                            <br>Docente Universidad de Antioquia (2020-2024)
-                            <br>Instrumentadora quirúrgica Centro de veterinaria y zootecnia CES (2020-Actualidad)
-                            <br>Docente Universidad CES (2022-Actualidad)
-                        </p>
-                        <button>+info</button>
-                    </div>
-                    <div id="education">
-                        <h3>Educación</h3>
-                        <p>
-                            <br>Instrumentadora quirúrgica Universidad de Antioquia (2020)
-                            <br>Diplomado TICS en la práctica docente Universidad CES (2023)
-                            <br>Diplomado en docencia universitaria Universidad CES (2023)
-                            <br>Instructora en simulación en salud Universidad de Antioquia (2023)
-                            <br>Desarrollo Frontend Nodo EAFIT (Cursando)
-                        </p>   
-                                <button>+info</button>
-                        
-                    </div>
-                    <div id="habilities">
-                        <h3>Habilidades</h3>
-                        <p>
-                            <br>Manejo avanzado de herramienta quirúrgicas y tecnología en cirugía
-                            <br>Conocimiento de programación HTML, CSS y JavaScript
-                            <br>Comunicación efectiva en equipos interdisciplinarios
-                            <br>Capacidad para enseñar y transmitir conocimientos de manera clara y didáctica
-                            <br>Adaptabilidad en entornos dinámicos
-                            <br>Idiomas: Español(Nativo) Inglés(B1.2)
-                        </p>
-                        <button>+info</button<br>
-                    </div>
-            </div>    
+                                <strong>Experiencia laboral</strong>
+                                Docente Universidad de Antioquia (2020-2024)
+                                <br>Instrumentadora quirúrgica Centro de veterinaria y zootecnia CES (2020-Actualidad)
+                                <br>Docente Universidad CES (2022-Actualidad)
+                            </p>
+                            <button class="info-btn">+info</button>
+                        </section>
+                        <section id="education">
+                            <p>
+                                <strong>Educación</strong>
+                                Instrumentadora quirúrgica Universidad de Antioquia (2020)
+                                <br>Diplomado TICS en la práctica docente Universidad CES (2023)
+                                <br>Diplomado en docencia universitaria Universidad CES (2023)
+                                <br>Instructora en simulación en salud Universidad de Antioquia (2023)
+                                <br>Desarrollo Frontend Nodo EAFIT (Cursando)
+                            </p>   
+                                    <button class="info-btn">+info</button>
+                            
+                        </section>
+                        <section id="abilities">
+                            <p>
+                                <strong>Habilidades</strong>
+                                Manejo avanzado de herramienta quirúrgicas y tecnología en cirugía
+                                <br>Conocimiento de programación HTML, CSS y JavaScript
+                                <br>Comunicación efectiva en equipos interdisciplinarios
+                                <br>Capacidad para enseñar y transmitir conocimientos de manera clara y didáctica
+                                <br>Adaptabilidad en entornos dinámicos
+                                <br>Idiomas: Español(Nativo) Inglés(B1.2)
+                            </p>
+                            <button class="info-btn">+info</button><br>
+                        </section>
+                </div>  
+        </div>  
         </div>
         </div>
     </section>
 
     <section id="follow-me">
         <h2>¡Contáctame!</h2>
-        <form action="https://www.instagram.com/roxamaya30?igsh=MTAwazNkM3JiaXhnZQ%3D%3D&utm_source=qr " target="_blank">
-            <button>Instagram</button>   
-        </form> 
-        <form action="mailto:lroxana.amaya@gmail.com" target="_blank">    
-            <button>e-mail</button>
-        </form> 
-        <form action="https://wa.me/573147287543" target="_blank">
-        <button>Whatsapp</button>
-        </form>
+        <div class="container">
+            <form id="botons" action="https://www.instagram.com/roxamaya30?igsh=MTAwazNkM3JiaXhnZQ%3D%3D&utm_source=qr " target="_blank">
+                <button class="contact-btn">Instagram</button>   
+            </form> 
+            <br> 
+            <form id="botons" action="mailto:xxxxxxx.xxxxxx@gmail.com" target="_blank">    
+                <button class="contact-btn">email</button>
+            </form> 
+            <br> 
+            <form id="botons" action="https://wa.me/570000000000" target="_blank">
+            <button class="contact-btn">Whatsapp</button>
+            </form>
+    </div>
     </section>
 
    <footer>
@@ -96,6 +106,6 @@
         <p>Actividad Nodo EAFIT</p>
     </div>
    </footer>
-    
+
 </body>
 </html>
